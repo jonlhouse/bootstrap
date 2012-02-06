@@ -197,6 +197,10 @@ a:hover {
 .offset11 {
   margin-left: 900px;
 }
+div.fixed-pos {
+  position: absolute;
+  top: 0;
+}
 .container {
   width: 940px;
   margin-left: auto;
@@ -212,7 +216,7 @@ a:hover {
 }
 .fluid-container {
   position: relative;
-  min-width: 940px;
+  min-width: 720px;
   padding-left: 20px;
   padding-right: 20px;
   *zoom: 1;
@@ -261,6 +265,9 @@ p small {
   font-size: 20px;
   font-weight: 200;
   line-height: 27px;
+}
+.baseline-bottom {
+  margin-bottom: 18px;
 }
 h1,
 h2,
@@ -348,6 +355,10 @@ li {
   line-height: 18px;
 }
 ul.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+ul.sortable {
   margin-left: 0;
   list-style: none;
 }
@@ -471,6 +482,9 @@ pre code {
 }
 form {
   margin: 0 0 18px;
+}
+form.tight-bottom {
+  margin-bottom: 0px;
 }
 fieldset {
   padding: 0;
@@ -890,6 +904,17 @@ input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, selec
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
+.input-prepend .add-on input[type="checkbox"],
+.input-append .add-on input[type="checkbox"],
+.input-prepend .add-on input[type="checkbox"],
+.input-append .add-on input[type="checkbox"] {
+  margin-left: 0px;
+}
+.input-prepend span.separator, .input-append span.separator {
+  float: left;
+  line-height: 24px;
+  padding: 0 2px;
+}
 .input-prepend .active, .input-append .active {
   background-color: #a9dba9;
   border-color: #46a546;
@@ -979,6 +1004,9 @@ input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, selec
 }
 .form-horizontal .form-actions {
   padding-left: 160px;
+}
+.control-group .controls input, .control-group .controls select {
+  margin-bottom: 0px;
 }
 table {
   max-width: 100%;
@@ -1112,7 +1140,7 @@ table .span12 {
   margin-left: 0;
 }
 .icon {
-  background-image: url(../img/glyphicons-halflings.png);
+  background-image: url(/img/glyphicons-halflings.png);
   background-position: 14px 14px;
   background-repeat: no-repeat;
   display: inline-block;
@@ -1125,7 +1153,7 @@ table .span12 {
   *margin-left: 0;
 }
 .icon.white {
-  background-image: url(../img/glyphicons-halflings-white.png);
+  background-image: url(/img/glyphicons-halflings-white.png);
 }
 .icon.glass {
   background-position: 0      0;
@@ -2862,6 +2890,13 @@ button.btn.small, input[type="submit"].btn.small {
 .alert-info, .alert-info .alert-heading {
   color: #3a87ad;
 }
+.alert-neutral {
+  background-color: #f7f7f9;
+  border-color: #eeeeee;
+}
+.alert-neutral, .alert-neutral .alert-heading {
+  color: #555555;
+}
 .alert-block {
   padding-top: 14px;
   padding-bottom: 14px;
@@ -2937,14 +2972,6 @@ a.thumbnail:hover {
   background-color: #3a87ad;
 }
 @-webkit-keyframes progress-bar-stripes {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 40px 0;
-  }
-}
-@keyframes progress-bar-stripes {
   from {
     background-position: 0 0;
   }

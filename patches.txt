@@ -1,0 +1,73 @@
+# variables.less
+@neutralText:             @gray;
+@neutralBackground:       #F7F7F9;
+@neutralBorder:           #grayLighter;
+
+# layouts.less
+.fluid-container {
+  min-width: @siteWidth - @fluidSidebarWidth;
+}
+
+# forms.less
+form {
+  &.tight-bottom {
+  }
+}
+
+# re-position checkbox in append
+.input-prepend .add-on input[type="checkbox"],
+.input-append .add-on input[type="checkbox"] {
+  margin-left: 0px;
+}
+
+# span within .input-append/prepend
+.input-append, .input-prepend {
+  .separator {
+    float: left;
+    line-height: 24px;
+    padding: 0 2px;
+  }
+}
+
+# type.less
+.baseline-bottom {
+  margin-bottom: @baseLineHeight;
+}
+
+ul.sortable {
+  margin-left: 0;
+  list-style: none;
+
+  > div {
+    position: relative;
+
+    > i.icon {
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      width: 20px;
+      margin: auto 0;
+    }
+
+    > li {
+      margin-left: 20px;
+    }
+  }
+}
+
+
+# forms.less (remove extra bottom margin between form inputs and help text)
+.control-group .controls {
+  input, select {
+    margin-bottom: 0px;
+  }
+}
+
+# grid.less (use to lock in absolute position)
+div.fixed-pos {
+  position: absolute;
+  top: 0;
+}
+
+# alerts.less
+

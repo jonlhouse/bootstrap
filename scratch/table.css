@@ -1,0 +1,45 @@
+table {
+    border: solid #66CC99;
+    border-width: 0px 1px 1px 0px;
+    width: 400px;
+}
+th, td {
+    border: solid #66CC99;
+    border-width: 1px 0px 0px 1px;
+    padding: 4px;
+}
+th {
+    background-color: #339999;
+    color: #FFFFFF;
+}
+tr.alt td {
+    background-color: #EEEEEE;
+}
+tbody {
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+div {
+    position: relative;
+    height: 200px;
+    width: 416px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: solid #66CC99;
+    border-width: 0px 0px 1px 0px;
+}
+table {
+    border-width: 1px 1px 0px 0px;
+}
+thead tr {
+    position: absolute;
+    top: expression(this.offsetParent.scrollTop);
+}
+tbody {
+    height: auto;
+}
+table tbody tr:first-child td, .first-row {
+    padding: 29px 4px 4px 4px;
+}
+

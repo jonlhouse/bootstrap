@@ -23,6 +23,10 @@ p {
   line-height: @baseLineHeight * 1.5;
 }
 
+.baseline-bottom {
+  margin-bottom: @baseLineHeight;
+}
+
 // HEADINGS
 // --------
 
@@ -115,6 +119,11 @@ ul.unstyled {
   list-style: none;
 }
 
+ul.sortable {
+  margin-left: 0;
+  list-style: none;
+}
+
 // Description Lists
 dl {
   margin-bottom: @baseLineHeight;
@@ -195,7 +204,7 @@ blockquote {
 // Quotes
 q:before,
 q:after,
-blockquote:before, 
+blockquote:before,
 blockquote:after {
   content: "";
 }
@@ -215,3 +224,4 @@ small {
 cite {
   font-style: normal;
 }
+

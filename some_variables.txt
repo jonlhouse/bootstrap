@@ -1,0 +1,30 @@
+// Page
+$pageBackground:    #fff;
+
+// Links
+$linkColor:         #0069d6;
+$linkColorHover:    darken($linkColor, 15);
+
+// Grays
+$black:             #000;
+$grayDark:          lighten($black, 25%);
+$gray:              lighten($black, 50%);
+$grayLight:         lighten($black, 75%);
+$grayLighter:       lighten($black, 90%);
+$white:             #fff;
+
+// Accent Colors
+$blue:                #9ad2f5;
+$blueLight:           #dff1fc;
+$blueDark:            #428ab0;
+$blueNavy:            #284f65;
+$blueGray:            #ecefef;
+$green:               #468355;
+$red:                 #f25430;
+$yellow:              #ffc950;
+$orange:              #f25430;
+$orangeLight:         #f27c61;
+$pink:                #fabbac;
+$purple:              #260b01;
+$brown:               #260b01;
+

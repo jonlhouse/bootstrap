@@ -12,7 +12,7 @@
 // Fluid layouts (left aligned, with sidebar, min- & max-width content)
 .fluid-container {
   position: relative;
-  min-width: @siteWidth;
+  min-width: @siteWidth - @fluidSidebarWidth;
   padding-left: @gridGutterWidth;
   padding-right: @gridGutterWidth;
   .clearfix();
@@ -41,3 +41,4 @@
   float: left;
   width: 100%;
 }
+
