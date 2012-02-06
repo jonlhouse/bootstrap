@@ -4,7 +4,7 @@
   <h1>{{_i}}Customize and download{{/i}}</h1>
   <p class="lead">{{_i}}<a href="https://github.com/twitter/bootstrap/zipball/master">Download the full repository</a> or customize your entire Bootstrap build by selecting only the components, javascript plugins, and assets you need.{{/i}}</p>
   <div class="subnav">
-    <ul class="nav pills">
+    <ul class="nav nav-pills">
       <li><a href="#components">{{_i}}1. Choose components{{/i}}</a></li>
       <li><a href="#plugins">{{_i}}2. Select jQuery plugins{{/i}}</a></li>
       <li><a href="#variables">{{_i}}3. Customize variables{{/i}}</a></li>
@@ -15,7 +15,7 @@
 
 <section class="download" id="components">
   <div class="page-header">
-    <a class="btn small pull-right toggle-all" href="#">{{_i}}Toggle all{{/i}}</a>
+    <a class="btn btn-small pull-right toggle-all" href="#">{{_i}}Toggle all{{/i}}</a>
     <h1>
       {{_i}}1. Chose components{{/i}}
       <small>{{_i}}Get just the CSS you need{{/i}}</small>
@@ -24,7 +24,8 @@
   <div class="row download-builder">
     <div class="span3">
       <h3>{{_i}}Scaffolding{{/i}}</h3>
-      <label class="checkbox"><input checked="checked" type="checkbox" value="reset.less"> {{_i}}CSS reset{{/i}}</label>
+      <label class="checkbox"><input checked="checked" type="checkbox" value="reset.less"> {{_i}}Normalize and reset{{/i}}</label>
+      <label class="checkbox"><input checked="checked" type="checkbox" value="scaffolding.less"> {{_i}}Body type and links{{/i}}</label>
       <label class="checkbox"><input checked="checked" type="checkbox" value="grid.less"> {{_i}}Grid system{{/i}}</label>
       <label class="checkbox"><input checked="checked" type="checkbox" value="layouts.less"> {{_i}}Layouts{{/i}}</label>
       <h3>{{_i}}Base CSS{{/i}}</h3>
@@ -47,6 +48,7 @@
       <label class="checkbox"><input checked="checked" type="checkbox" value="thumbnails.less"> {{_i}}Thumbnails{{/i}}</label>
       <label class="checkbox"><input checked="checked" type="checkbox" value="alerts.less"> {{_i}}Alerts{{/i}}</label>
       <label class="checkbox"><input checked="checked" type="checkbox" value="progress-bars.less"> {{_i}}Progress bars{{/i}}</label>
+      <label class="checkbox"><input checked="checked" type="checkbox" value="hero-unit.less"> {{_i}}Hero unit{{/i}}</label>
     </div><!-- /span -->
     <div class="span3">
       <h3>{{_i}}JS Components{{/i}}</h3>
@@ -63,19 +65,15 @@
       <label class="checkbox"><input checked="checked" type="checkbox" value="close.less"> {{_i}}Close icon{{/i}}</label>
       <label class="checkbox"><input checked="checked" type="checkbox" value="utilities.less"> {{_i}}Utilities{{/i}}</label>
       <label class="checkbox"><input checked="checked" type="checkbox" value="component-animations.less"> {{_i}}Component animations{{/i}}</label>
-      <!--
       <h3>{{_i}}Responsive{{/i}}</h3>
-      <label class="checkbox"><input type="checkbox" value=""> {{_i}}Max-width 480px{{/i}}</label>
-      <label class="checkbox"><input type="checkbox" value=""> {{_i}}Max-width 768px{{/i}}</label>
-      <label class="checkbox"><input type="checkbox" value=""> {{_i}}Max-width 1210px{{/i}}</label>
-      -->
+      <label class="checkbox"><input checked="checked" type="checkbox" value="responsive.less"> {{_i}}Responsive layouts{{/i}}</label>
     </div><!-- /span -->
   </div><!-- /row -->
 </section>
 
 <section class="download" id="plugins">
   <div class="page-header">
-    <a class="btn small pull-right toggle-all" href="#">{{_i}}Toggle all{{/i}}</a>
+    <a class="btn btn-small pull-right toggle-all" href="#">{{_i}}Toggle all{{/i}}</a>
     <h1>
       {{_i}}2. Select jQuery plugins{{/i}}
       <small>{{_i}}Quickly add only the necessary javascript{{/i}}</small>
@@ -144,7 +142,7 @@
 
 <section class="download" id="variables">
   <div class="page-header">
-    <a class="btn small pull-right toggle-all" href="#">{{_i}}Reset to defaults{{/i}}</a>
+    <a class="btn btn-small pull-right toggle-all" href="#">{{_i}}Reset to defaults{{/i}}</a>
     <h1>
       {{_i}}3. Customize variables{{/i}}
       <small>{{_i}}Optionally modify Bootstrap without a compiler{{/i}}</small>
@@ -178,13 +176,14 @@
       <label>@gridColumns</label>
       <input type="text" class="span3" placeholder="12">
       <label>@gridColumnWidth</label>
-      <input type="text" class="span3" placeholder="40px">
+      <input type="text" class="span3" placeholder="60px">
       <label>@gridGutterWidth</label>
       <input type="text" class="span3" placeholder="20px">
-      <label>@siteWidth</label>
-      <input type="text" class="span3" placeholder="(@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));">
-      <label>@fluidSidebarWidth</label>
-      <input type="text" class="span3" placeholder="220px">
+      <h3>{{_i}}Fluid grid system{{/i}}</h3>
+      <label>@fluidGridColumnWidth</label>
+      <input type="text" class="span3" placeholder="6.382978723%">
+      <label>@fluidGridGutterWidth</label>
+      <input type="text" class="span3" placeholder="2.127659574%">
       <h3>{{_i}}Typography{{/i}}</h3>
       <label>@baseFontSize</label>
       <input type="text" class="span3" placeholder="13px">
@@ -242,7 +241,7 @@
     </h1>
   </div>
   <div class="download-btn">
-    <a class="btn xlarge primary" href="#">{{_i}}Customize and Download{{/i}}</a>
+    <a class="btn btn-primary" href="#">{{_i}}Customize and Download{{/i}}</a>
     <h4>{{_i}}What's included?{{/i}}</h4>
     <p>{{_i}}Downloads include compiled CSS, compiled and minified CSS, and compiled jQuery plugins, all nicely packed up into a zipball for your convenience.{{/i}}</p>
   </div>

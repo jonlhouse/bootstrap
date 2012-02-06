@@ -26,37 +26,48 @@
   </head>
 
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
-  
-  
+
+
   <!-- Navbar
     ================================================== -->
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
           <a class="brand" href="./index.html">Bootstrap</a>
-          <ul class="nav">
-            <li class="{{index}}">
-              <a href="./index.html">{{_i}}Overview{{/i}}</a>
-            </li>
-            <li class="{{scaffolding}}">
-              <a href="./scaffolding.html">{{_i}}Scaffolding{{/i}}</a>
-            </li>
-            <li class="{{base-css}}">
-              <a href="./base-css.html">{{_i}}Base CSS{{/i}}</a>
-            </li>
-            <li class="{{components}}">
-              <a href="./components.html">{{_i}}Components{{/i}}</a>
-            </li>
-            <li class="{{javascript}}">
-              <a href="./javascript.html">{{_i}}Javascript plugins{{/i}}</a>
-            </li>
-            <li class="{{less}}">
-              <a href="./less.html">{{_i}}Using LESS{{/i}}</a>
-            </li>
-            <li class="{{download}}">
-              <a href="./download.html">{{_i}}Customize{{/i}}</a>
-            </li>
-          </ul>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="{{index}}">
+                <a href="./index.html">{{_i}}Overview{{/i}}</a>
+              </li>
+              <li class="{{scaffolding}}">
+                <a href="./scaffolding.html">{{_i}}Scaffolding{{/i}}</a>
+              </li>
+              <li class="{{base-css}}">
+                <a href="./base-css.html">{{_i}}Base CSS{{/i}}</a>
+              </li>
+              <li class="{{components}}">
+                <a href="./components.html">{{_i}}Components{{/i}}</a>
+              </li>
+              <li class="{{javascript}}">
+                <a href="./javascript.html">{{_i}}Javascript plugins{{/i}}</a>
+              </li>
+              <li class="{{less}}">
+                <a href="./less.html">{{_i}}Using LESS{{/i}}</a>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class="{{download}}">
+                <a href="./download.html">{{_i}}Customize{{/i}}</a>
+              </li>
+              <li class="{{examples}}">
+                <a href="./examples.html">{{_i}}Examples{{/i}}</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -83,20 +94,39 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="../js/tests/vendor/jquery.js"></script>
+    <script src="assets/js/jquery.js"></script>
     <script src="assets/js/google-code-prettify/prettify.js"></script>
-    <script src="../js/bootstrap-transition.js"></script>
-    <script src="../js/bootstrap-alert.js"></script>
-    <script src="../js/bootstrap-modal.js"></script>
-    <script src="../js/bootstrap-dropdown.js"></script>
-    <script src="../js/bootstrap-scrollspy.js"></script>
-    <script src="../js/bootstrap-tab.js"></script>
-    <script src="../js/bootstrap-tooltip.js"></script>
-    <script src="../js/bootstrap-popover.js"></script>
-    <script src="../js/bootstrap-button.js"></script>
-    <script src="../js/bootstrap-collapse.js"></script>
-    <script src="../js/bootstrap-carousel.js"></script>
-    <script src="../js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
     <script src="assets/js/application.js"></script>
+
+    {{#production}}
+    <!-- Analytics
+    ================================================== -->
+    <script>
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+    {{/production}}
+
   </body>
 </html>

@@ -4,7 +4,7 @@
   <h1>{{_i}}Components{{/i}}</h1>
   <p class="lead">{{_i}}Dozens of reusable components are built into Bootstrap to provide navigation, alerts, popovers, and much more.{{/i}}</p>
   <div class="subnav">
-    <ul class="nav pills">
+    <ul class="nav nav-pills">
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{_i}}Buttons{{/i}} <b class="caret"></b></a>
         <ul class="dropdown-menu">
@@ -103,8 +103,85 @@
 ================================================== -->
 <section id="buttonDropdowns">
   <div class="page-header">
-    <h1>{{_i}}Buttons dropdowns{{/i}} <small>{{_i}}Built on button groups to provide contextual dropdown menus{{/i}}</small></h1>
+    <h1>{{_i}}Buttons dropdowns{{/i}} <small>{{_i}}Contextual dropdown menus built on button groups{{/i}}</small></h1>
   </div>
+
+  <div class="row">
+    <div class="span4">
+      <h3>{{_i}}Button dropdowns{{/i}}</h3>
+      <p>{{_i}}Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.{{/i}}</p>
+      <div class="btn-toolbar" style="margin-top: 18px;">
+        <div class="btn-group">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">{{_i}}Action{{/i}} <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">{{_i}}Action{{/i}}</a></li>
+            <li><a href="#">{{_i}}Another action{{/i}}</a></li>
+            <li><a href="#">{{_i}}Something else here{{/i}}</a></li>
+            <li class="divider"></li>
+            <li><a href="#">{{_i}}Separated link{{/i}}</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+        <div class="btn-group">
+          <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">{{_i}}Action{{/i}} <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">{{_i}}Action{{/i}}</a></li>
+            <li><a href="#">{{_i}}Another action{{/i}}</a></li>
+            <li><a href="#">{{_i}}Something else here{{/i}}</a></li>
+            <li class="divider"></li>
+            <li><a href="#">{{_i}}Separated link{{/i}}</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+        <div class="btn-group">
+          <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" href="#">{{_i}}Danger{{/i}} <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">{{_i}}Action{{/i}}</a></li>
+            <li><a href="#">{{_i}}Another action{{/i}}</a></li>
+            <li><a href="#">{{_i}}Something else here{{/i}}</a></li>
+            <li class="divider"></li>
+            <li><a href="#">{{_i}}Separated link{{/i}}</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+      </div>
+      <div class="btn-toolbar">
+        <div class="btn-group">
+          <a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#">{{_i}}Success{{/i}} <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">{{_i}}Action{{/i}}</a></li>
+            <li><a href="#">{{_i}}Another action{{/i}}</a></li>
+            <li><a href="#">{{_i}}Something else here{{/i}}</a></li>
+            <li class="divider"></li>
+            <li><a href="#">{{_i}}Separated link{{/i}}</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+        <div class="btn-group">
+          <a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">{{_i}}Info{{/i}} <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">{{_i}}Action{{/i}}</a></li>
+            <li><a href="#">{{_i}}Another action{{/i}}</a></li>
+            <li><a href="#">{{_i}}Something else here{{/i}}</a></li>
+            <li class="divider"></li>
+            <li><a href="#">{{_i}}Separated link{{/i}}</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+      </div>
+    </div>
+    <div class="span8">
+      <h3>{{_i}}Example markup{{/i}}</h3>
+      <p>{{_i}}Similar to a button group, our markup uses regular button markup, but with a handful of additions to refine the style and support Bootstrap's dropdown jQuery plugin.{{/i}}</p>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group"&gt;
+  &lt;a class="btn dropdown-toggle" data-toggle="dropdown" href="#"&gt;
+    {{_i}}Action{{/i}}
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;!-- {{_i}}dropdown menu links{{/i}} --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
   <div class="row">
     <div class="span4">
       <h3>{{_i}}Split button dropdowns{{/i}}</h3>
@@ -122,8 +199,8 @@
           </ul>
         </div><!-- /btn-group -->
         <div class="btn-group">
-          <a class="btn primary" href="#">{{_i}}Action{{/i}}</a>
-          <a class="btn primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+          <a class="btn btn-primary" href="#">{{_i}}Action{{/i}}</a>
+          <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">{{_i}}Action{{/i}}</a></li>
             <li><a href="#">{{_i}}Another action{{/i}}</a></li>
@@ -133,8 +210,8 @@
           </ul>
         </div><!-- /btn-group -->
         <div class="btn-group">
-          <a class="btn danger" href="#">{{_i}}Danger{{/i}}</a>
-          <a class="btn danger dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+          <a class="btn btn-danger" href="#">{{_i}}Danger{{/i}}</a>
+          <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">{{_i}}Action{{/i}}</a></li>
             <li><a href="#">{{_i}}Another action{{/i}}</a></li>
@@ -146,8 +223,8 @@
       </div>
       <div class="btn-toolbar">
         <div class="btn-group">
-          <a class="btn success" href="#">{{_i}}Success{{/i}}</a>
-          <a class="btn success dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+          <a class="btn btn-success" href="#">{{_i}}Success{{/i}}</a>
+          <a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">{{_i}}Action{{/i}}</a></li>
             <li><a href="#">{{_i}}Another action{{/i}}</a></li>
@@ -157,8 +234,8 @@
           </ul>
         </div><!-- /btn-group -->
         <div class="btn-group">
-          <a class="btn info" href="#">{{_i}}Info{{/i}}</a>
-          <a class="btn info dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+          <a class="btn btn-info" href="#">{{_i}}Info{{/i}}</a>
+          <a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">{{_i}}Action{{/i}}</a></li>
             <li><a href="#">{{_i}}Another action{{/i}}</a></li>
@@ -171,7 +248,7 @@
     </div>
     <div class="span8">
       <h3>{{_i}}Example markup{{/i}}</h3>
-      <p>{{_i}}Similar to a button group, our markup uses regular button markup, but with a handful of additions to refine the style and support Bootstrap's dropdown jQuery plugin.{{/i}}</p>
+      <p>{{_i}}We expand on the normal button dropdowns to provide a second button action that operates as a separate dropdown trigger.{{/i}}</p>
 <pre class="prettyprint linenums">
 &lt;div class="btn-group"&gt;
   &lt;a class="btn" href="#"&gt;{{_i}}Action{{/i}}&lt;/a&gt;
@@ -207,14 +284,14 @@
     </div>
     <div class="span4">
       <h3>{{_i}}Basic tabs{{/i}}</h3>
-      <p>{{_i}}Take a regular <code>&lt;ul&gt;</code> of links and add <code>.tabs</code>:{{/i}}</p>
-      <ul class="nav tabs">
+      <p>{{_i}}Take a regular <code>&lt;ul&gt;</code> of links and add <code>.nav-tabs</code>:{{/i}}</p>
+      <ul class="nav nav-tabs">
         <li class="active"><a href="#">{{_i}}Home{{/i}}</a></li>
         <li><a href="#">{{_i}}Profile{{/i}}</a></li>
         <li><a href="#">{{_i}}Messages{{/i}}</a></li>
       </ul>
 <pre class="prettyprint linenums">
-&lt;ul class="nav tabs"&gt;
+&lt;ul class="nav nav-tabs"&gt;
   &lt;li class="active"&gt;
     &lt;a href="#"&gt;{{_i}}Home{{/i}}&lt;/a&gt;
   &lt;/li&gt;
@@ -225,14 +302,14 @@
     </div>
     <div class="span4">
       <h3>{{_i}}Basic pills{{/i}}</h3>
-      <p>{{_i}}Take that same HTML, but use <code>.pills</code> instead:{{/i}}</p>
-      <ul class="nav pills">
+      <p>{{_i}}Take that same HTML, but use <code>.nav-pills</code> instead:{{/i}}</p>
+      <ul class="nav nav-pills">
         <li class="active"><a href="#">{{_i}}Home{{/i}}</a></li>
         <li><a href="#">{{_i}}Profile{{/i}}</a></li>
         <li><a href="#">{{_i}}Messages{{/i}}</a></li>
       </ul>
 <pre class="prettyprint linenums">
-&lt;ul class="nav pills"&gt;
+&lt;ul class="nav nav-pills"&gt;
   &lt;li class="active"&gt;
     &lt;a href="#"&gt;{{_i}}Home{{/i}}&lt;/a&gt;
   &lt;/li&gt;
@@ -247,30 +324,30 @@
   <div class="row">
     <div class="span4">
       <h3>{{_i}}How to stack 'em{{/i}}</h3>
-      <p>{{_i}}As tabs and pills are horizontal by default, just add a second class, <code>.stacked</code>, to make them appear vertically stacked.{{/i}}</p>
+      <p>{{_i}}As tabs and pills are horizontal by default, just add a second class, <code>.nav-stacked</code>, to make them appear vertically stacked.{{/i}}</p>
     </div>
     <div class="span4">
       <h3>{{_i}}Stacked tabs{{/i}}</h3>
-      <ul class="nav tabs stacked">
+      <ul class="nav nav-tabs nav-stacked">
         <li class="active"><a href="#">{{_i}}Home{{/i}}</a></li>
         <li><a href="#">{{_i}}Profile{{/i}}</a></li>
         <li><a href="#">{{_i}}Messages{{/i}}</a></li>
       </ul>
 <pre class="prettyprint linenums">
-&lt;ul class="nav tabs stacked"&gt;
+&lt;ul class="nav nav-tabs nav-stacked"&gt;
   ...
 &lt;/ul&gt;
 </pre>
     </div>
     <div class="span4">
       <h3>{{_i}}Stacked pills{{/i}}</h3>
-      <ul class="nav pills stacked">
+      <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#">{{_i}}Home{{/i}}</a></li>
         <li><a href="#">{{_i}}Profile{{/i}}</a></li>
         <li><a href="#">{{_i}}Messages{{/i}}</a></li>
       </ul>
 <pre class="prettyprint linenums">
-&lt;ul class="nav pills stacked"&gt;
+&lt;ul class="nav nav-pills nav-stacked"&gt;
   ...
 &lt;/ul&gt;
 </pre>
@@ -286,7 +363,7 @@
     </div>
     <div class="span4">
       <h3>{{_i}}Tabs with dropdowns{{/i}}</h3>
-      <ul class="nav tabs">
+      <ul class="nav nav-tabs">
         <li class="active"><a href="#">{{_i}}Home{{/i}}</a></li>
         <li><a href="#">{{_i}}Profile{{/i}}</a></li>
         <li class="dropdown">
@@ -301,7 +378,7 @@
         </li>
       </ul>
 <pre class="prettyprint linenums">
-&lt;ul class="nav tabs"&gt;
+&lt;ul class="nav nav-tabs"&gt;
   &lt;li class="dropdown"&gt;
     &lt;a class="dropdown-toggle"
        data-toggle="dropdown"
@@ -318,7 +395,7 @@
     </div>
     <div class="span4">
       <h3>{{_i}}Pills with dropdowns{{/i}}</h3>
-      <ul class="nav pills">
+      <ul class="nav nav-pills">
         <li class="active"><a href="#">{{_i}}Home{{/i}}</a></li>
         <li><a href="#">{{_i}}Profile{{/i}}</a></li>
         <li class="dropdown">
@@ -333,7 +410,7 @@
         </li>
       </ul>
 <pre class="prettyprint linenums">
-&lt;ul class="nav pills"&gt;
+&lt;ul class="nav nav-pills"&gt;
   &lt;li class="dropdown"&gt;
     &lt;a class="dropdown-toggle"
        data-toggle="dropdown"
@@ -361,9 +438,9 @@
     </div>
     <div class="span4">
       <h3>{{_i}}Example nav list{{/i}}</h3>
-      <p>{{_i}}Take a list of links and add <code>class="nav list"</code>:{{/i}}</p>
+      <p>{{_i}}Take a list of links and add <code>class="nav nav-list"</code>:{{/i}}</p>
       <div class="well" style="padding: 8px 0;">
-        <ul class="nav list">
+        <ul class="nav nav-list">
           <li class="nav-header">{{_i}}List header{{/i}}</li>
           <li class="active"><a href="#">{{_i}}Home{{/i}}</a></li>
           <li><a href="#">{{_i}}Library{{/i}}</a></li>
@@ -375,7 +452,7 @@
         </ul>
       </div> <!-- /well -->
 <pre class="prettyprint linenums">
-&lt;ul class="nav list"&gt;
+&lt;ul class="nav nav-list"&gt;
   &lt;li class="nav-header"&gt;
     {{_i}}List header{{/i}}
   &lt;/li&gt;
@@ -393,23 +470,23 @@
       <h3>{{_i}}Example with icons{{/i}}</h3>
       <p>{{_i}}Same example, but with <code>&lt;i&gt;</code> tags for icons.{{/i}}</p>
       <div class="well" style="padding: 8px 0;">
-        <ul class="nav list">
+        <ul class="nav nav-list">
           <li class="nav-header">{{_i}}List header{{/i}}</li>
-          <li class="active"><a href="#"><i class="icon home"></i> {{_i}}Home{{/i}}</a></li>
-          <li><a href="#"><i class="icon book"></i> {{_i}}Library{{/i}}</a></li>
-          <li><a href="#"><i class="icon pencil"></i> {{_i}}Applications{{/i}}</a></li>
+          <li class="active"><a href="#"><i class="icon-white icon-home"></i> {{_i}}Home{{/i}}</a></li>
+          <li><a href="#"><i class="icon-book"></i> {{_i}}Library{{/i}}</a></li>
+          <li><a href="#"><i class="icon-pencil"></i> {{_i}}Applications{{/i}}</a></li>
           <li class="nav-header">{{_i}}Another list header{{/i}}</li>
-          <li><a href="#"><i class="icon user"></i> {{_i}}Profile{{/i}}</a></li>
-          <li><a href="#"><i class="icon cog"></i> {{_i}}Settings{{/i}}</a></li>
-          <li><a href="#"><i class="icon flag"></i> {{_i}}Help{{/i}}</a></li>
+          <li><a href="#"><i class="icon-user"></i> {{_i}}Profile{{/i}}</a></li>
+          <li><a href="#"><i class="icon-cog"></i> {{_i}}Settings{{/i}}</a></li>
+          <li><a href="#"><i class="icon-flag"></i> {{_i}}Help{{/i}}</a></li>
         </ul>
       </div> <!-- /well -->
 <pre class="prettyprint linenums">
-&lt;ul class="nav list"&gt;
+&lt;ul class="nav nav-list"&gt;
   ...
   &lt;li&gt;
     &lt;a href="#"&gt;
-      &lt;i class="icon book"&gt;&lt;/i&gt;
+      &lt;i class="icon-book"&gt;&lt;/i&gt;
       {{_i}}Library{{/i}}
     &lt;/a&gt;
   &lt;/li&gt;
@@ -429,9 +506,9 @@
     </div>
     <div class="span4">
       <h3>{{_i}}Tabbable example{{/i}}</h3>
-      <p>{{_i}}To make tabs tabbable, wrap the <code>.tabs</code> in another div with class <code>.tabbable</code>.{{/i}}</p>
+      <p>{{_i}}To make tabs tabbable, wrap the <code>.nav-tabs</code> in another div with class <code>.tabbable</code>.{{/i}}</p>
       <div class="tabbable" style="margin-bottom: 9px;">
-        <ul class="nav tabs">
+        <ul class="nav nav-tabs">
           <li class="active"><a href="#1" data-toggle="tab">{{_i}}Section 1{{/i}}</a></li>
           <li><a href="#2" data-toggle="tab">{{_i}}Section 2{{/i}}</a></li>
           <li><a href="#3" data-toggle="tab">{{_i}}Section 3{{/i}}</a></li>
@@ -452,7 +529,7 @@
     <div class="span4">
       <h3>{{_i}}Custom jQuery plugin{{/i}}</h3>
       <p>{{_i}}All tabbable tabs are powered by our lightweight jQuery plugin. Read more about how to bring tabbable tabs to life on the javascript docs page.{{/i}}</p>
-      <p><a class="btn" href="./javascript.html/#tabs">{{_i}}Get the javascript &rarr;{{/i}}</a></p>
+      <p><a class="btn" href="./javascript.html#tabs">{{_i}}Get the javascript &rarr;{{/i}}</a></p>
     </div>
   </div>
 
@@ -460,7 +537,7 @@
   <p>{{_i}}Using tabbable tabs requires a wrapping div, a set of tabs, and a set of tabbable panes of content.{{/i}}</p>
 <pre class="prettyprint linenums">
 &lt;div class="tabbable"&gt;
-  &lt;ul class="nav tabs"&gt;
+  &lt;ul class="nav nav-tabs"&gt;
     &lt;li class="active"&gt;&lt;a href="#1" data-toggle="tab"&gt;{{_i}}Section 1{{/i}}&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#2" data-toggle="tab"&gt;{{_i}}Section 2{{/i}}&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
@@ -492,20 +569,20 @@
             <p>{{_i}}What up girl, this is Section C.{{/i}}</p>
           </div>
         </div>
-        <ul class="nav tabs">
+        <ul class="nav nav-tabs">
           <li class="active"><a href="#A" data-toggle="tab">{{_i}}Section 1{{/i}}</a></li>
           <li><a href="#B" data-toggle="tab">{{_i}}Section 2{{/i}}</a></li>
           <li><a href="#C" data-toggle="tab">{{_i}}Section 3{{/i}}</a></li>
         </ul>
       </div> <!-- /tabbable -->
 <pre class="prettyprint linenums" style="margin-top: 11px;">
-&lt;div class="tabbable tabs-bottom"&gt;
-  &lt;ul class="nav tabs"&gt;
-    ...
-  &lt;/ul&gt;
+&lt;div class="tabbable tabs-below"&gt;
   &lt;div class="tab-content"&gt;
     ...
   &lt;/div&gt;
+  &lt;ul class="nav nav-tabs"&gt;
+    ...
+  &lt;/ul&gt;
 &lt;/div&gt;
 </pre>
     </div>
@@ -513,7 +590,7 @@
       <h4>{{_i}}Tabs on the left{{/i}}</h4>
       <p>{{_i}}Swap the class to put tabs on the left.{{/i}}</p>
       <div class="tabbable tabs-left">
-        <ul class="nav tabs">
+        <ul class="nav nav-tabs">
           <li class="active"><a href="#lA" data-toggle="tab">{{_i}}Section 1{{/i}}</a></li>
           <li><a href="#lB" data-toggle="tab">{{_i}}Section 2{{/i}}</a></li>
           <li><a href="#lC" data-toggle="tab">{{_i}}Section 3{{/i}}</a></li>
@@ -532,7 +609,7 @@
       </div> <!-- /tabbable -->
 <pre class="prettyprint linenums">
 &lt;div class="tabbable tabs-left"&gt;
-  &lt;ul class="nav tabs"&gt;
+  &lt;ul class="nav nav-tabs"&gt;
     ...
   &lt;/ul&gt;
   &lt;div class="tab-content"&gt;
@@ -545,7 +622,7 @@
       <h4>{{_i}}Tabs on the right{{/i}}</h4>
       <p>{{_i}}Swap the class to put tabs on the right.{{/i}}</p>
       <div class="tabbable tabs-right">
-        <ul class="nav tabs">
+        <ul class="nav nav-tabs">
           <li class="active"><a href="#rA" data-toggle="tab">{{_i}}Section 1{{/i}}</a></li>
           <li><a href="#rB" data-toggle="tab">{{_i}}Section 2{{/i}}</a></li>
           <li><a href="#rC" data-toggle="tab">{{_i}}Section 3{{/i}}</a></li>
@@ -564,7 +641,7 @@
       </div> <!-- /tabbable -->
 <pre class="prettyprint linenums">
 &lt;div class="tabbable tabs-right"&gt;
-  &lt;ul class="nav tabs"&gt;
+  &lt;ul class="nav nav-tabs"&gt;
     ...
   &lt;/ul&gt;
   &lt;div class="tab-content"&gt;
@@ -587,43 +664,50 @@
   </div>
   <h2>{{_i}}Static navbar example{{/i}}</h2>
   <p>{{_i}}An example of a static (not fixed to the top) navbar with project name, navigation, and search form.{{/i}}</p>
-  <div class="navbar navbar-static">
+  <div class="navbar">
     <div class="navbar-inner">
       <div class="container" style="width: auto;">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
         <a class="brand" href="#">{{_i}}Project name{{/i}}</a>
-        <ul class="nav">
-          <li class="active"><a href="#">{{_i}}Home{{/i}}</a></li>
-          <li><a href="#">{{_i}}Link{{/i}}</a></li>
-          <li><a href="#">{{_i}}Link{{/i}}</a></li>
-          <li><a href="#">{{_i}}Link{{/i}}</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{_i}}Dropdown{{/i}} <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">{{_i}}Action{{/i}}</a></li>
-              <li><a href="#">{{_i}}Another action{{/i}}</a></li>
-              <li><a href="#">{{_i}}Something else here{{/i}}</a></li>
-              <li class="divider"></li>
-              <li><a href="#">{{_i}}Separated link{{/i}}</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="navbar-search pull-left" action="">
-          <input type="text" class="search-query span2" placeholder="Search">
-        </form>
-        <ul class="nav pull-right">
-          <li><a href="#">{{_i}}Link{{/i}}</a></li>
-          <li class="vertical-divider"></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{_i}}Dropdown{{/i}} <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">{{_i}}Action{{/i}}</a></li>
-              <li><a href="#">{{_i}}Another action{{/i}}</a></li>
-              <li><a href="#">{{_i}}Something else here{{/i}}</a></li>
-              <li class="divider"></li>
-              <li><a href="#">{{_i}}Separated link{{/i}}</a></li>
-            </ul>
-          </li>
-        </ul>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li class="active"><a href="#">{{_i}}Home{{/i}}</a></li>
+            <li><a href="#">{{_i}}Link{{/i}}</a></li>
+            <li><a href="#">{{_i}}Link{{/i}}</a></li>
+            <li><a href="#">{{_i}}Link{{/i}}</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{_i}}Dropdown{{/i}} <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">{{_i}}Action{{/i}}</a></li>
+                <li><a href="#">{{_i}}Another action{{/i}}</a></li>
+                <li><a href="#">{{_i}}Something else here{{/i}}</a></li>
+                <li class="divider"></li>
+                <li><a href="#">{{_i}}Separated link{{/i}}</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-search pull-left" action="">
+            <input type="text" class="search-query span2" placeholder="Search">
+          </form>
+          <ul class="nav pull-right">
+            <li><a href="#">{{_i}}Link{{/i}}</a></li>
+            <li class="divider-vertical"></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{_i}}Dropdown{{/i}} <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">{{_i}}Action{{/i}}</a></li>
+                <li><a href="#">{{_i}}Another action{{/i}}</a></li>
+                <li><a href="#">{{_i}}Something else here{{/i}}</a></li>
+                <li class="divider"></li>
+                <li><a href="#">{{_i}}Separated link{{/i}}</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.nav-collapse -->
       </div>
     </div><!-- /navbar-inner -->
   </div><!-- /navbar -->
@@ -633,7 +717,7 @@
       <h3>{{_i}}Navbar scaffolding{{/i}}</h3>
       <p>{{_i}}The navbar requires only a few divs to structure it well for static or fixed display.{{/i}}</p>
 <pre class="prettyprint linenums">
-&lt;div class="navbar navbar-static"&gt;
+&lt;div class="navbar"&gt;
   &lt;div class="navbar-inner"&gt;
     &lt;div class="container"&gt;
       ...
@@ -641,7 +725,7 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-      <p>{{_i}}To make the navbar fixed, swap the <code>.navbar-static</code> class for <code>.navbar-fixed-top</code>. In your CSS, you will also need to account for the overlap it causes by adding <code>padding-top: 40px;</code> to your <code>&lt;body&gt;</code>.{{/i}}</p>
+      <p>{{_i}}To make the navbar fixed to the top of the viewport, add <code>.navbar-fixed-top</code> to the outermost div, <code>.navbar</code>. In your CSS, you will also need to account for the overlap it causes by adding <code>padding-top: 40px;</code> to your <code>&lt;body&gt;</code>.{{/i}}</p>
 <pre class="prettyprint linenums">
 &lt;div class="navbar navbar-fixed-top"&gt;
   ...
@@ -657,11 +741,41 @@
       <h3>{{_i}}Search form{{/i}}</h3>
       <p>{{_i}}Search forms receive custom styles in the navbar with the <code>.navbar-search</code> class. Include <code>.pull-left</code> or <code>.pull-right</code> on the <code>form</code> to align it.{{/i}}</p>
 <pre class="prettyprint linenums">
-&lt;form class="navbar-search"&gt;
-  &lt;input type="text" class="search-query pull-left" placeholder="{{_i}}Search{{/i}}"&gt;
+&lt;form class="navbar-search pull-left"&gt;
+  &lt;input type="text" class="search-query" placeholder="{{_i}}Search{{/i}}"&gt;
 &lt;/form&gt;
 </pre>
-    </div>
+      <h3>{{_i}}Optional responsive variation{{/i}}</h3>
+      <p>{{_i}}Depending on the amount of content in your topbar, you might want to implement the responsive options. To do so, wrap your nav content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.btn-navbar</code>.{{/i}}</p>
+<pre class="prettyprint linenums">
+&lt;div class="navbar"&gt;
+  &lt;div class="navbar-inner"&gt;
+    &lt;div class="container"&gt;
+      
+      &lt;!-- .btn-navbar is used as the toggle for collapsed navbar content --&gt;
+      &lt;a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;/a&gt;
+      
+      &lt;!-- Be sure to leave the brand out there if you want it shown --&gt;
+      &lt;a class="brand" href="#"&gt;{{_i}}Project name{{/i}}&lt;/a&gt;
+
+      &lt;!-- Everything you want hidden at 940px or less, place within here --&gt;
+      &lt;div class="nav-collapse"&gt;
+        &lt;!-- .nav, .navbar-search, .navbar-form, etc --&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+      <div class="alert alert-info">
+        <strong>{{_i}}Heads up!{{/i}}</strong> The responsive navbar requires the <a href="./javascript.html#collapse">collapse plugin</a>.
+      </div>
+
+    </div><!-- /.span -->
     <div class="span4">
       <h3>{{_i}}Nav links{{/i}}</h3>
       <p>{{_i}}Nav items are simple to add via unordered lists.{{/i}}</p>
@@ -675,7 +789,7 @@
 &lt;/ul&gt;
 </pre>
       <h3>{{_i}}Adding dropdowns{{/i}}</h3>
-      <p>{{_i}}Adding dropdowns to the nav is super simple, but does require the use of <a href="./javascript.html/#dropdown">our javascript plugin</a>.{{/i}}</p>
+      <p>{{_i}}Adding dropdowns to the nav is super simple, but does require the use of <a href="./javascript.html#dropdown">our javascript plugin</a>.{{/i}}</p>
 <pre class="prettyprint linenums">
 &lt;ul class="nav"&gt;
   &lt;li class="dropdown"&gt;
@@ -691,9 +805,9 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-    <p><a class="btn" href="./javascript.html/#dropdown">{{_i}}Get the javascript &rarr;{{/i}}</a></p>
-    </div>
-  </div>
+      <p><a class="btn" href="./javascript.html#dropdown">{{_i}}Get the javascript &rarr;{{/i}}</a></p>
+    </div><!-- /.span -->
+  </div><!-- /.row -->
 
 </section>
 
@@ -756,7 +870,7 @@
     <h1>{{_i}}Pagination{{/i}} <small>{{_i}}Two options for paging through content{{/i}}</small></h1>
   </div>
 
-  <h2>{{_i}}Multi-page pagination{{/i}}</h2>
+  <h2>{{_i}}Multicon-page pagination{{/i}}</h2>
   <div class="row">
     <div class="span4">
       <h3>{{_i}}When to use{{/i}}</h3>
@@ -883,7 +997,7 @@
   <table class="table table-bordered table-striped">
     <thead>
       <tr>
-        <th style="width: 190px;">{{_i}}Labels{{/i}}</th>
+        <th>{{_i}}Labels{{/i}}</th>
         <th>{{_i}}Markup{{/i}}</th>
       </tr>
     </thead>
@@ -898,34 +1012,34 @@
       </tr>
       <tr>
         <td>
-          <span class="label success">{{_i}}New{{/i}}</span>
+          <span class="label label-success">{{_i}}Success{{/i}}</span>
         </td>
         <td>
-          <code>&lt;span class="label success"&gt;{{/_i}}New{{/i}}&lt;/span&gt;</code>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <span class="label warning">{{_i}}Warning{{/i}}</span>
-        </td>
-        <td>
-          <code>&lt;span class="label warning"&gt;{{_i}}Warning{{/i}}&lt;/span&gt;</code>
+          <code>&lt;span class="label label-success"&gt;{{/_i}}New{{/i}}&lt;/span&gt;</code>
         </td>
       </tr>
       <tr>
         <td>
-          <span class="label important">{{_i}}Important{{/i}}</span>
+          <span class="label label-warning">{{_i}}Warning{{/i}}</span>
         </td>
         <td>
-          <code>&lt;span class="label important"&gt;{{_i}}Important{{/i}}&lt;/span&gt;</code>
+          <code>&lt;span class="label label-warning"&gt;{{_i}}Warning{{/i}}&lt;/span&gt;</code>
         </td>
       </tr>
       <tr>
         <td>
-          <span class="label info">{{_i}}Info{{/i}}</span>
+          <span class="label label-important">{{_i}}Important{{/i}}</span>
         </td>
         <td>
-          <code>&lt;span class="label info"&gt;{{_i}}Info{{/i}}&lt;/span&gt;</code>
+          <code>&lt;span class="label label-important"&gt;{{_i}}Important{{/i}}&lt;/span&gt;</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="label label-info">{{_i}}Info{{/i}}</span>
+        </td>
+        <td>
+          <code>&lt;span class="label label-info"&gt;{{_i}}Info{{/i}}&lt;/span&gt;</code>
         </td>
       </tr>
     </tbody>
@@ -948,22 +1062,22 @@
       <ul class="thumbnails">
         <li class="span3">
           <a href="#" class="thumbnail">
-            <img src="http://placehold.it/210x150" alt="">
+            <img src="http://placehold.it/260x180" alt="">
           </a>
         </li>
         <li class="span3">
           <a href="#" class="thumbnail">
-            <img src="http://placehold.it/210x150" alt="">
+            <img src="http://placehold.it/260x180" alt="">
           </a>
         </li>
         <li class="span3">
           <a href="#" class="thumbnail">
-            <img src="http://placehold.it/210x150" alt="">
+            <img src="http://placehold.it/260x180" alt="">
           </a>
         </li>
         <li class="span3">
           <a href="#" class="thumbnail">
-            <img src="http://placehold.it/210x150" alt="">
+            <img src="http://placehold.it/260x180" alt="">
           </a>
         </li>
       </ul>
@@ -974,7 +1088,7 @@
       <ul class="thumbnails">
         <li class="span3">
           <div class="thumbnail">
-            <img src="http://placehold.it/210x150" alt="">
+            <img src="http://placehold.it/260x180" alt="">
             <div class="caption">
               <h5>{{_i}}Thumbnail label{{/i}}</h5>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -984,7 +1098,7 @@
         </li>
         <li class="span3">
           <div class="thumbnail">
-            <img src="http://placehold.it/210x150" alt="">
+            <img src="http://placehold.it/260x180" alt="">
             <div class="caption">
               <h5>{{_i}}Thumbnail label{{/i}}</h5>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -1019,7 +1133,7 @@
 &lt;ul class="thumbnails"&gt;
   &lt;li class="span3"&gt;
     &lt;a href="#" class="thumbnail"&gt;
-      &lt;img src="http://placehold.it/210x150" alt=""&gt;
+      &lt;img src="http://placehold.it/260x180" alt=""&gt;
     &lt;/a&gt;
   &lt;/li&gt;
   ...
@@ -1030,7 +1144,7 @@
 &lt;ul class="thumbnails"&gt;
   &lt;li class="span3"&gt;
     &lt;div class="thumbnail"&gt;
-      &lt;img src="http://placehold.it/210x150" alt=""&gt;
+      &lt;img src="http://placehold.it/260x180" alt=""&gt;
       &lt;h5&gt;{{_i}}Thumbnail label{{/i}}&lt;/h5&gt;
       &lt;p&gt;{{_i}}Thumbnail caption right here...{{/i}}&lt;/p&gt;
     &lt;/div&gt;
@@ -1045,32 +1159,32 @@
       <ul class="thumbnails">
         <li class="span4">
           <a href="#" class="thumbnail">
-            <img src="http://placehold.it/290x226" alt="">
+            <img src="http://placehold.it/360x268" alt="">
           </a>
         </li>
         <li class="span2">
           <a href="#" class="thumbnail">
-            <img src="http://placehold.it/130x100" alt="">
+            <img src="http://placehold.it/160x120" alt="">
           </a>
         </li>
         <li class="span2">
           <a href="#" class="thumbnail">
-            <img src="http://placehold.it/130x100" alt="">
+            <img src="http://placehold.it/160x120" alt="">
           </a>
         </li>
         <li class="span2">
           <a href="#" class="thumbnail">
-            <img src="http://placehold.it/130x100" alt="">
+            <img src="http://placehold.it/160x120" alt="">
           </a>
         </li>
         <li class="span2">
           <a href="#" class="thumbnail">
-            <img src="http://placehold.it/130x100" alt="">
+            <img src="http://placehold.it/160x120" alt="">
           </a>
         </li>
         <li class="span2">
           <a href="#" class="thumbnail">
-            <img src="http://placehold.it/130x100" alt="">
+            <img src="http://placehold.it/160x120" alt="">
           </a>
         </li>
       </ul>
@@ -1105,25 +1219,25 @@
       <p>{{_i}}Wrap your message and an optional close icon in a div with simple class.{{/i}}</p>
       <div class="alert">
         <a class="close">&times;</a>
-        <strong>{{_i}}Warning!{{/i}}</strong> {{_i}}Best check yo self, you’re not looking too good.{{/i}}
+        <strong>{{_i}}Warning!{{/i}}</strong> {{_i}}Best check yo self, you're not looking too good.{{/i}}
       </div>
 <pre class="prettyprint linenums">
 &lt;div class="alert"&gt;
   &lt;a class="close"&gt;&times;&lt;/a&gt;
-  &lt;strong&gt;{{_i}}Warning!{{/i}}&lt;/strong&gt; {{_i}}Best check yo self, you’re not looking too good.{{/i}}
+  &lt;strong&gt;{{_i}}Warning!{{/i}}&lt;/strong&gt; {{_i}}Best check yo self, you're not looking too good.{{/i}}
 &lt;/div&gt;
 </pre>
       <p>{{_i}}Easily extend the standard alert message with two optional classes: <code>.alert-block</code> for more padding and text controls and <code>.alert-heading</code> for a matching heading.{{/i}}</p>
       <div class="alert alert-block">
         <a class="close">&times;</a>
         <h4 class="alert-heading">{{_i}}Warning!{{/i}}</h4>
-        <p>{{_i}}Best check yo self, you’re not looking too good.{{/i}} Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        <p>{{_i}}Best check yo self, you're not looking too good.{{/i}} Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
       </div>
 <pre class="prettyprint linenums">
 &lt;div class="alert alert-block"&gt;
   &lt;a class="close"&gt;&times;&lt;/a&gt;
   &lt;h4 class="alert-heading"&gt;{{_i}}Warning!{{/i}}&lt;/h4&gt;
-  {{_i}}Best check yo self, you’re not...{{/i}}
+  {{_i}}Best check yo self, you're not...{{/i}}
 &lt;/div&gt;
 </pre>
     </div>
@@ -1159,7 +1273,7 @@
       <h3>{{_i}}Information{{/i}}</h3>
       <div class="alert alert-info">
         <a class="close">&times;</a>
-        <strong>{{_i}}Heads up!{{/i}}</strong> {{_i}}This alert needs your attention, but it’s not super important.{{/i}}
+        <strong>{{_i}}Heads up!{{/i}}</strong> {{_i}}This alert needs your attention, but it's not super important.{{/i}}
       </div>
 <pre class="prettyprint linenums">
 &lt;div class="alert alert-info"&gt;
@@ -1198,12 +1312,12 @@
     <div class="span4">
       <h3>{{_i}}Striped{{/i}}</h3>
       <p>{{_i}}Uses a gradient to create a striped effect.{{/i}}</p>
-      <div class="progress info striped">
+      <div class="progress progress-info progress-striped">
         <div class="bar" style="width: 20%;"></div>
       </div>
 <pre class="prettyprint linenums">
-&lt;div class="progress info
-     striped"&gt;
+&lt;div class="progress progress-info
+     progress-striped"&gt;
   &lt;div class="bar"
        style="width: 20%;"&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -1212,12 +1326,12 @@
     <div class="span4">
       <h3>{{_i}}Animated{{/i}}</h3>
       <p>{{_i}}Takes the striped example and animates it.{{/i}}</p>
-      <div class="progress danger active striped">
+      <div class="progress progress-danger progress-striped active">
         <div class="bar" style="width: 45%"></div>
       </div>
 <pre class="prettyprint linenums">
-&lt;div class="progress danger
-     striped active"&gt;
+&lt;div class="progress progress-danger
+     progress-striped active"&gt;
   &lt;div class="bar"
        style="width: 40%;"&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -1229,18 +1343,18 @@
   <div class="row">
     <div class="span4">
       <h3>{{_i}}Additional colors{{/i}}</h3>
-      <p>{{_i}}Progress bars utilize some of the same classes as buttons and alert messages for quick styling.{{/i}}</p>
+      <p>{{_i}}Progress bars utilize some of the same class names as buttons and alerts for similar styling.{{/i}}</p>
       <ul>
-        <li><code>.info</code></li>
-        <li><code>.success</code></li>
-        <li><code>.danger</code></li>
+        <li><code>.progress-info</code></li>
+        <li><code>.progress-success</code></li>
+        <li><code>.progress-danger</code></li>
       </ul>
       <p>{{_i}}Alternatively, you can customize the LESS files and roll your own colors and sizes.{{/i}}</p>
     </div>
     <div class="span4">
       <h3>{{_i}}Behavior{{/i}}</h3>
       <p>{{_i}}Progress bars use CSS3 transitions, so if you dynamically adjust the width via javascript, it will smoothly resize.{{/i}}</p>
-      <p>{{_i}}If you use the <code>.active</code> class, your <code>.striped</code> progress bars will animate the stripes left to right.{{/i}}</p>
+      <p>{{_i}}If you use the <code>.active</code> class, your <code>.progress-striped</code> progress bars will animate the stripes left to right.{{/i}}</p>
     </div>
     <div class="span4">
       <h3>{{_i}}Browser support{{/i}}</h3>
@@ -1287,7 +1401,3 @@
     </div><!--/span-->
   </div><!--/row-->
 </section>
-
-
-
-

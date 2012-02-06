@@ -31,8 +31,3 @@ nbproject
 .svn
 .CVS
 .idea
-
-# Misc
-js/min
-
-dist
