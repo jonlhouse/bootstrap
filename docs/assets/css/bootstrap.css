@@ -730,6 +730,42 @@ input.span11, textarea.span11, .uneditable-input.span11 {
 input.span12, textarea.span12, .uneditable-input.span12 {
   width: 930px;
 }
+.input-append.combobox input.span1, .input-prepend.combobox input.span1 {
+  width: 22px;
+}
+.input-append.combobox input.span2, .input-prepend.combobox input.span2 {
+  width: 102px;
+}
+.input-append.combobox input.span3, .input-prepend.combobox input.span3 {
+  width: 182px;
+}
+.input-append.combobox input.span4, .input-prepend.combobox input.span4 {
+  width: 262px;
+}
+.input-append.combobox input.span5, .input-prepend.combobox input.span5 {
+  width: 342px;
+}
+.input-append.combobox input.span6, .input-prepend.combobox input.span6 {
+  width: 422px;
+}
+.input-append.combobox input.span7, .input-prepend.combobox input.span7 {
+  width: 502px;
+}
+.input-append.combobox input.span8, .input-prepend.combobox input.span8 {
+  width: 582px;
+}
+.input-append.combobox input.span9, .input-prepend.combobox input.span9 {
+  width: 662px;
+}
+.input-append.combobox input.span10, .input-prepend.combobox input.span10 {
+  width: 742px;
+}
+.input-append.combobox input.span11, .input-prepend.combobox input.span11 {
+  width: 822px;
+}
+.input-append.combobox input.span12, .input-prepend.combobox input.span12 {
+  width: 902px;
+}
 input[disabled],
 select[disabled],
 textarea[disabled],
@@ -1149,7 +1185,7 @@ table .span12 {
   width: 14px;
   height: 14px;
   vertical-align: text-top;
-  background-image: url(img/glyphicons-halflings.png);
+  background-image: url(/img/glyphicons-halflings.png);
   background-position: 14px 14px;
   background-repeat: no-repeat;
   *margin-right: .3em;
@@ -1158,7 +1194,7 @@ table .span12 {
   *margin-left: 0;
 }
 .icon-white {
-  background-image: url(img/glyphicons-halflings-white.png);
+  background-image: url(/img/glyphicons-halflings-white.png);
 }
 .icon-glass {
   background-position: 0      0;
@@ -1555,11 +1591,14 @@ li.dropdown:hover .caret, .open.dropdown .caret {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-.input-prepend .caret, .input-append .caret {
+.input-prepend.combobox .caret, .input-append.combobox .caret {
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 8px solid #000000;
   margin: 6px 0;
+}
+.input-prepend.combobox ul.dropdown-menu, .input-append.combobox ul.dropdown-menu {
+  margin-top: -8px;
 }
 .dropdown-menu {
   position: absolute;

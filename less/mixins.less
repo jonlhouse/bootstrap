@@ -145,7 +145,7 @@
   // Setup the mixins to be used
   .columns(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, @columns) {
     width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));
-  } 
+  }
   .offset(@gridColumnWidth, @gridGutterWidth, @columns) {
     margin-left: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)) + (@gridGutterWidth * 2);
   }
@@ -199,13 +199,13 @@
   // Setup the mixins to be used
   .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, @columns) {
     width: 1% * (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1));
-  } 
+  }
   .gridColumn(@fluidGridGutterWidth) {
     float: left;
     margin-left: @fluidGridGutterWidth;
   }
   // Take these values and mixins, and make 'em do their thang
-  .generate(@gridColumns, @fluidGridColumnWidth, @fluidGridGutterWidth) {      
+  .generate(@gridColumns, @fluidGridColumnWidth, @fluidGridGutterWidth) {
     // Row surrounds the columns
     .row-fluid {
       width: 100%;
@@ -243,6 +243,9 @@
   .inputColumns(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, @columns) {
     width: ((@gridColumnWidth) * @columns) + (@gridGutterWidth * (@columns - 1)) - 10;
   }
+  .inputColumnsCombobox(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, @columns) {
+    width: ((@gridColumnWidth) * @columns) + (@gridGutterWidth * (@columns - 1)) - 38;  // -10 - 28
+  }
   .generate(@gridColumns, @gridColumnWidth, @gridGutterWidth) {
     input,
     textarea,
@@ -259,6 +262,21 @@
       &.span10    { #inputGridSystem > .inputColumns(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 10); }
       &.span11    { #inputGridSystem > .inputColumns(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 11); }
       &.span12    { #inputGridSystem > .inputColumns(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 12); }
+    }
+    .input-append.combobox input,
+    .input-prepend.combobox input {
+      &.span1     { #inputGridSystem > .inputColumnsCombobox(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 1); }
+      &.span2     { #inputGridSystem > .inputColumnsCombobox(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 2); }
+      &.span3     { #inputGridSystem > .inputColumnsCombobox(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 3); }
+      &.span4     { #inputGridSystem > .inputColumnsCombobox(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 4); }
+      &.span5     { #inputGridSystem > .inputColumnsCombobox(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 5); }
+      &.span6     { #inputGridSystem > .inputColumnsCombobox(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 6); }
+      &.span7     { #inputGridSystem > .inputColumnsCombobox(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 7); }
+      &.span8     { #inputGridSystem > .inputColumnsCombobox(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 8); }
+      &.span9     { #inputGridSystem > .inputColumnsCombobox(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 9); }
+      &.span10    { #inputGridSystem > .inputColumnsCombobox(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 10); }
+      &.span11    { #inputGridSystem > .inputColumnsCombobox(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 11); }
+      &.span12    { #inputGridSystem > .inputColumnsCombobox(@gridGutterWidth, @gridColumnWidth, @gridRowWidth, 12); }
     }
   }
 }
@@ -535,3 +553,4 @@
     border-right: @arrowWidth solid @black;
   }
 }
+

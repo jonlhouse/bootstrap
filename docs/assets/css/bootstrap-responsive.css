@@ -277,6 +277,42 @@
   input.span12, textarea.span12, .uneditable-input.span12 {
     width: 714px;
   }
+  .input-append.combobox input.span1, .input-prepend.combobox input.span1 {
+    width: 4px;
+  }
+  .input-append.combobox input.span2, .input-prepend.combobox input.span2 {
+    width: 66px;
+  }
+  .input-append.combobox input.span3, .input-prepend.combobox input.span3 {
+    width: 128px;
+  }
+  .input-append.combobox input.span4, .input-prepend.combobox input.span4 {
+    width: 190px;
+  }
+  .input-append.combobox input.span5, .input-prepend.combobox input.span5 {
+    width: 252px;
+  }
+  .input-append.combobox input.span6, .input-prepend.combobox input.span6 {
+    width: 314px;
+  }
+  .input-append.combobox input.span7, .input-prepend.combobox input.span7 {
+    width: 376px;
+  }
+  .input-append.combobox input.span8, .input-prepend.combobox input.span8 {
+    width: 438px;
+  }
+  .input-append.combobox input.span9, .input-prepend.combobox input.span9 {
+    width: 500px;
+  }
+  .input-append.combobox input.span10, .input-prepend.combobox input.span10 {
+    width: 562px;
+  }
+  .input-append.combobox input.span11, .input-prepend.combobox input.span11 {
+    width: 624px;
+  }
+  .input-append.combobox input.span12, .input-prepend.combobox input.span12 {
+    width: 686px;
+  }
 }
 @media (max-width: 980px) {
   body {
@@ -557,6 +593,42 @@
   }
   input.span12, textarea.span12, .uneditable-input.span12 {
     width: 1160px;
+  }
+  .input-append.combobox input.span1, .input-prepend.combobox input.span1 {
+    width: 32px;
+  }
+  .input-append.combobox input.span2, .input-prepend.combobox input.span2 {
+    width: 132px;
+  }
+  .input-append.combobox input.span3, .input-prepend.combobox input.span3 {
+    width: 232px;
+  }
+  .input-append.combobox input.span4, .input-prepend.combobox input.span4 {
+    width: 332px;
+  }
+  .input-append.combobox input.span5, .input-prepend.combobox input.span5 {
+    width: 432px;
+  }
+  .input-append.combobox input.span6, .input-prepend.combobox input.span6 {
+    width: 532px;
+  }
+  .input-append.combobox input.span7, .input-prepend.combobox input.span7 {
+    width: 632px;
+  }
+  .input-append.combobox input.span8, .input-prepend.combobox input.span8 {
+    width: 732px;
+  }
+  .input-append.combobox input.span9, .input-prepend.combobox input.span9 {
+    width: 832px;
+  }
+  .input-append.combobox input.span10, .input-prepend.combobox input.span10 {
+    width: 932px;
+  }
+  .input-append.combobox input.span11, .input-prepend.combobox input.span11 {
+    width: 1032px;
+  }
+  .input-append.combobox input.span12, .input-prepend.combobox input.span12 {
+    width: 1132px;
   }
   .thumbnails {
     margin-left: -30px;
