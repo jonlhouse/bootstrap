@@ -9,8 +9,8 @@
 // Make all forms have space below them
 form {
   margin: 0 0 @baseLineHeight;
-  &.tight-bottom {
-    margin-bottom: 0px;
+  &.tight {
+    margin: 0px;
   }
 }
 
@@ -403,9 +403,12 @@ select:focus:required:invalid {
       margin-left: 0px;
     }
   }
+  label.add-on {
+    margin-bottom: 0;
+  }
   span.separator {
     float: left;
-    line-height: 24px;
+    line-height: 28px;
     padding: 0 2px;
   }
   .active {
@@ -493,6 +496,10 @@ select:focus:required:invalid {
 // Margin to space out fieldsets
 .control-group {
   margin-bottom: @baseLineHeight / 2;
+}
+
+.control-group.tight {
+  margin-bottom: 0px;
 }
 
 // Horizontal-specific styles

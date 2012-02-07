@@ -33,9 +33,22 @@
   margin-top: 8px;
   margin-left: 2px;
 }
-.dropdown:hover .caret,
+li.dropdown:hover .caret,
 .open.dropdown .caret {
   .opacity(100);
+}
+
+.input-prepend.dropdown .caret:hover,
+.input-append.dropdown .caret:hover {
+  .opacity(100);
+}
+.input-prepend .caret,
+.input-append .caret {
+  border-left:  8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top:   8px solid @black;
+  margin: 6px 0;
+
 }
 // The dropdown menu (ul)
 .dropdown-menu {
@@ -129,3 +142,4 @@
   margin-top: 2px; // give it some space to breathe
   .border-radius(4px);
 }
+
