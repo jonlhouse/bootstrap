@@ -1013,6 +1013,35 @@ input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, selec
 .form-inline .input-prepend .add-on {
   vertical-align: middle;
 }
+.control-group.inline .controls {
+  *zoom: 1;
+}
+.control-group.inline .controls:before, .control-group.inline .controls:after {
+  display: table;
+  content: "";
+}
+.control-group.inline .controls:after {
+  clear: both;
+}
+.control-group.inline .input-append:before,
+.control-group.inline .input-prepend:after,
+.control-group.inline .input-append:after,
+.control-group.inline .input-append:after {
+  display: none;
+  clear: none;
+}
+.control-group.inline .input-append, .control-group.inline .input-prepend {
+  float: left;
+}
+.control-group.inline span.separator {
+  float: left;
+  line-height: 28px;
+  padding: 0 2px;
+}
+.control-group.inline input[type="text"], .control-group.inline input[type="file"], .control-group.inline input[type="select"] {
+  float: left;
+  display: inline-block;
+}
 .control-group {
   margin-bottom: 9px;
 }

@@ -493,6 +493,32 @@ select:focus:required:invalid {
   vertical-align: middle;
 }
 
+.control-group.inline {
+  .controls {
+    .clearfix();
+  }
+  // remove the input-append, input-prepend clearfix
+  .input-append:before, .input-prepend:after,
+  .input-append:after, .input-append:after {
+    display: none;
+    clear: none;
+  }
+  .input-append, .input-prepend {
+    float: left;
+  }
+  span.separator {
+    float: left;
+    line-height: 28px;
+    padding: 0 2px;
+  }
+  input[type="text"],
+  input[type="file"],
+  input[type="select"] {
+    float: left;
+    display: inline-block;
+  }
+}
+
 // Margin to space out fieldsets
 .control-group {
   margin-bottom: @baseLineHeight / 2;
