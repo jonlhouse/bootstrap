@@ -506,9 +506,6 @@ pre code {
 form {
   margin: 0 0 18px;
 }
-form.tight {
-  margin: 0px;
-}
 fieldset {
   padding: 0;
   margin: 0;
@@ -977,6 +974,7 @@ input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, selec
   padding-left: 14px;
   padding-right: 14px;
   margin-bottom: 0;
+  margin-top: -4px;
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
   border-radius: 14px;
@@ -1044,9 +1042,6 @@ input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, selec
 }
 .control-group {
   margin-bottom: 9px;
-}
-.control-group.tight {
-  margin-bottom: 0px;
 }
 .form-horizontal legend + .control-group {
   margin-top: 18px;
@@ -2259,9 +2254,6 @@ button.btn.small, input[type="submit"].btn.small {
   padding-left: 12px;
   margin-right: 2px;
   line-height: 14px;
-}
-.nav-pills.tight, .nav-tabs.tight {
-  margin-bottom: 0;
 }
 .nav-tabs {
   border-bottom: 1px solid #ddd;
@@ -3479,4 +3471,7 @@ a.thumbnail:hover {
 }
 .invisible {
   visibility: hidden;
+}
+.tight {
+  margin: 0px;
 }

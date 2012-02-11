@@ -9,9 +9,6 @@
 // Make all forms have space below them
 form {
   margin: 0 0 @baseLineHeight;
-  &.tight {
-    margin: 0px;
-  }
 }
 
 fieldset {
@@ -454,6 +451,7 @@ select:focus:required:invalid {
   padding-left: 14px;
   padding-right: 14px;
   margin-bottom: 0; // remove the default margin on all inputs
+  margin-top: -4px; // move up so fits with other inline inputs
   .border-radius(14px);
 }
 
@@ -522,10 +520,6 @@ select:focus:required:invalid {
 // Margin to space out fieldsets
 .control-group {
   margin-bottom: @baseLineHeight / 2;
-}
-
-.control-group.tight {
-  margin-bottom: 0px;
 }
 
 // Horizontal-specific styles
