@@ -314,7 +314,7 @@
     width: 686px;
   }
 }
-@media (max-width: 980px) {
+@media (max-width: 768px) {
   body {
     padding-top: 0;
   }

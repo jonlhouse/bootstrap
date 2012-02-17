@@ -3,7 +3,7 @@
 #
 
 BOOTSTRAP_DIR="/home/jonlhouse/dev/bootstrap"
-STRONGMD_DIR="/home/jonlhouse/ror/strongmd"
+STRONGMD_DIR="/home/jonlhouse/rails/strongmd"
 
 cd $BOOTSTRAP_DIR
 make
