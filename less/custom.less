@@ -1,0 +1,19 @@
+// CUSTOM STUFF
+//
+
+span.btn-label {
+  line-height: @baseButtonHeight;
+}
+
+// MODAL EXTENSIONS
+.modal.modal-tall {
+  .modal-body {
+    max-height: 600px;    // add 200px so
+  }
+  margin-top: -350px;   // add 100px to original (margin: -250px 0 0 -280px;) top margins
+}
+
+.modal.modal-wide {     // original is 7 spans (560px wide) -- wide will be 10 spans (800px)
+  width: 800px;
+  margin-left: -400px;        // offset -280 - (new 240 / 2) =
+}
