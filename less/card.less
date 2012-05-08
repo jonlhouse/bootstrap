@@ -39,6 +39,48 @@
   }
 }
 
+// COLORS
+.card.card-success {
+  background-color: @successBackground;
+  border-color: @successBorder;
+  color: @successText;
+  .card-header {
+    h1, h2, h3, h4, h4, h5 {
+      color: darken(@successText, 20%);
+    }
+    border-bottom: 1px solid @successBorder;
+  }
+}
+.card-danger,
+.card-error {
+  background-color: @errorBackground;
+  border-color: @errorBorder;
+  color: @errorText;
+}
+.card-info {
+  background-color: @infoBackground;
+  border-color: @infoBorder;
+  color: @infoText;
+}
+.card.card-warning,
+.card.card-unsaved {
+  background-color: @warningBackground;
+  border-color: darken(@warningBorder, 20%);
+  color: @neutralHeaderText;
+  .card-header {
+    h1, h2, h3, h4, h4, h5 {
+      color: darken(@warningText, 20%);
+    }
+    border-bottom: 1px solid darken(@warningBorder, 20%);
+  }
+}
+
+.card-neutral {
+  background-color: @neutralBackground;
+  border-color: @neutralBorder;
+}
+
+
 //.alert,
 //.alert-heading {
 //  color: @warningText;
@@ -75,4 +117,3 @@
 //.alert-block p + p {
 //  margin-top: 5px;
 //}
-

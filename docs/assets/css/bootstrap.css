@@ -2630,6 +2630,61 @@ input[type="submit"].btn.btn-mini {
   position: relative;
   right: 10px;
 }
+.card.card-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+.card.card-success .card-header {
+  border-bottom: 1px solid #d6e9c6;
+}
+.card.card-success .card-header h1,
+.card.card-success .card-header h2,
+.card.card-success .card-header h3,
+.card.card-success .card-header h4,
+.card.card-success .card-header h4,
+.card.card-success .card-header h5 {
+  color: #234524;
+}
+.card-danger,
+.card-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+.card-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #3a87ad;
+}
+.card.card-warning,
+.card.card-unsaved {
+  background-color: #fcf8e3;
+  border-color: #f1ca79;
+  color: #777777;
+}
+.card.card-warning .card-header,
+.card.card-unsaved .card-header {
+  border-bottom: 1px solid #f1ca79;
+}
+.card.card-warning .card-header h1,
+.card.card-unsaved .card-header h1,
+.card.card-warning .card-header h2,
+.card.card-unsaved .card-header h2,
+.card.card-warning .card-header h3,
+.card.card-unsaved .card-header h3,
+.card.card-warning .card-header h4,
+.card.card-unsaved .card-header h4,
+.card.card-warning .card-header h4,
+.card.card-unsaved .card-header h4,
+.card.card-warning .card-header h5,
+.card.card-unsaved .card-header h5 {
+  color: #7f612e;
+}
+.card-neutral {
+  background-color: #f7f7f9;
+  border-color: #cccccc;
+}
 .nav {
   margin-left: 0;
   margin-bottom: 18px;
@@ -4156,4 +4211,13 @@ span.btn-label {
 .modal.modal-wide {
   width: 800px;
   margin-left: -400px;
+}
+.lr.lr-neg {
+  color: #7f3737;
+}
+.lr.lr-pos {
+  color: #377f37;
+}
+.lr.lr-unity {
+  color: #7f5b37;
 }
