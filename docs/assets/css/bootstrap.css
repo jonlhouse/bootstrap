@@ -4202,6 +4202,9 @@ a.thumbnail:hover {
 span.btn-label {
   line-height: 26px;
 }
+.combobox ul.dropdown-menu li a {
+  cursor: pointer;
+}
 .modal.modal-tall {
   margin-top: -350px;
 }
