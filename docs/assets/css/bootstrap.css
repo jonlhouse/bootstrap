@@ -2630,9 +2630,6 @@ input[type="submit"].btn.btn-mini {
   position: relative;
   right: 10px;
 }
-.card .line {
-  *zoom: 1;
-}
 .card .line > :first-child {
   width: 60px;
   float: left;
@@ -2644,12 +2641,26 @@ input[type="submit"].btn.btn-mini {
 .card .line > :not(:first-child) {
   margin-left: 80px;
 }
-.card .line:before,
-.card .line:after {
+.card .line.line-alert {
+  *zoom: 1;
+}
+.card .line.line-alert:before,
+.card .line.line-alert:after {
   display: table;
   content: "";
 }
-.card .line:after {
+.card .line.line-alert:after {
+  clear: both;
+}
+.card .line.line-info {
+  *zoom: 1;
+}
+.card .line.line-info:before,
+.card .line.line-info:after {
+  display: table;
+  content: "";
+}
+.card .line.line-info:after {
   clear: both;
 }
 .card-neutral {
