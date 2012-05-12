@@ -2630,32 +2630,34 @@ input[type="submit"].btn.btn-mini {
   position: relative;
   right: 10px;
 }
-.card.card-success {
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
-  color: #468847;
+.card .line {
+  *zoom: 1;
 }
-.card.card-success .card-header {
-  border-bottom: 1px solid #d6e9c6;
+.card .line > :first-child {
+  width: 60px;
+  float: left;
+  text-align: right;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
 }
-.card.card-success .card-header h1,
-.card.card-success .card-header h2,
-.card.card-success .card-header h3,
-.card.card-success .card-header h4,
-.card.card-success .card-header h4,
-.card.card-success .card-header h5 {
-  color: #234524;
+.card .line > :not(:first-child) {
+  margin-left: 80px;
 }
-.card-danger,
-.card-error {
-  background-color: #f2dede;
-  border-color: #eed3d7;
-  color: #b94a48;
+.card .line:before,
+.card .line:after {
+  display: table;
+  content: "";
 }
-.card-info {
-  background-color: #d9edf7;
-  border-color: #bce8f1;
-  color: #3a87ad;
+.card .line:after {
+  clear: both;
+}
+.card-neutral {
+  background-color: #f7f7f9;
+  border-color: #cccccc;
+}
+.card-neutral .line.line-alert > :not(:first-child) {
+  font-weight: bold;
 }
 .card.card-warning,
 .card.card-unsaved {
@@ -2681,9 +2683,49 @@ input[type="submit"].btn.btn-mini {
 .card.card-unsaved .card-header h5 {
   color: #7f612e;
 }
-.card-neutral {
-  background-color: #f7f7f9;
-  border-color: #cccccc;
+.card.card-warning .line > :first-child,
+.card.card-unsaved .line > :first-child {
+  color: #916f35;
+}
+.card.card-warning .line > :not(:first-child),
+.card.card-unsaved .line > :not(:first-child) {
+  color: #b78c43;
+}
+.card.card-warning .line.line-alert > :first-child,
+.card.card-unsaved .line.line-alert > :first-child {
+  color: #594521;
+}
+.card.card-warning .line.line-alert > :not(:first-child),
+.card.card-unsaved .line.line-alert > :not(:first-child) {
+  color: #916f35;
+  font-weight: bold;
+}
+.card-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #3a87ad;
+}
+.card.card-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+.card.card-success .card-header {
+  border-bottom: 1px solid #d6e9c6;
+}
+.card.card-success .card-header h1,
+.card.card-success .card-header h2,
+.card.card-success .card-header h3,
+.card.card-success .card-header h4,
+.card.card-success .card-header h4,
+.card.card-success .card-header h5 {
+  color: #234524;
+}
+.card-danger,
+.card-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
 }
 .nav {
   margin-left: 0;

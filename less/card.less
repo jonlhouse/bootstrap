@@ -39,7 +39,63 @@
   }
 }
 
+// FORMATTING
+.card .line {
+  > :first-child {
+    width: 60px;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  > :not(:first-child) {
+    margin-left: 80px;
+  }
+  .clearfix();
+}
+
 // COLORS
+.card-neutral {
+  background-color: @neutralBackground;
+  border-color: @neutralBorder;
+
+  .line.line-alert >:not(:first-child) {
+    font-weight: bold;
+  }
+}
+.card.card-warning,
+.card.card-unsaved {
+  background-color: @warningBackground;
+  border-color: darken(@warningBorder, 20%);
+  color: @neutralHeaderText;
+  .card-header {
+    h1, h2, h3, h4, h4, h5 {
+      color: darken(@warningText, 20%);
+    }
+    border-bottom: 1px solid darken(@warningBorder, 20%);
+  }
+  .line >:first-child {
+    color: darken(@warningText, 15%);
+  }
+  .line >:not(:first-child) {
+    color: darken(@warningText, 5%);
+  }
+  // special colors
+  .line.line-alert >:first-child {
+    color: darken(@warningText, 30%);
+  }
+  .line.line-alert >:not(:first-child) {
+    color: darken(@warningText, 15%);
+    font-weight: bold;
+  }
+}
+.card-info {
+  background-color: @infoBackground;
+  border-color: @infoBorder;
+  color: @infoText;
+}
+
 .card.card-success {
   background-color: @successBackground;
   border-color: @successBorder;
@@ -57,63 +113,3 @@
   border-color: @errorBorder;
   color: @errorText;
 }
-.card-info {
-  background-color: @infoBackground;
-  border-color: @infoBorder;
-  color: @infoText;
-}
-.card.card-warning,
-.card.card-unsaved {
-  background-color: @warningBackground;
-  border-color: darken(@warningBorder, 20%);
-  color: @neutralHeaderText;
-  .card-header {
-    h1, h2, h3, h4, h4, h5 {
-      color: darken(@warningText, 20%);
-    }
-    border-bottom: 1px solid darken(@warningBorder, 20%);
-  }
-}
-
-.card-neutral {
-  background-color: @neutralBackground;
-  border-color: @neutralBorder;
-}
-
-
-//.alert,
-//.alert-heading {
-//  color: @warningText;
-//}
-
-// Adjust close link position
-//.alert .close {
-//  position: relative;
-//  top: -2px;
-//  right: -21px;
-//  line-height: 18px;
-//}
-
-//.alert-neutral {
-//  background-color: @neutralBackground;
-//  border-color: @neutralBorder;
-//}
-//.alert-neutral,
-//.alert-neutral .alert-heading {
-//  color: @neutralText;
-//}
-
-
-// Block alerts
-// ------------------------
-//.alert-block {
-//  padding-top: 14px;
-//  padding-bottom: 14px;
-//}
-//.alert-block > p,
-//.alert-block > ul {
-//  margin-bottom: 0;
-//}
-//.alert-block p + p {
-//  margin-top: 5px;
-//}
