@@ -1,0 +1,31 @@
+
+.boxed {
+  border: 1px solid @grayLight;
+  padding: @h3_line_height/2 20px;
+  margin: @h3_line_height/2 0 20px 0;
+
+  h3 {
+    background-color: @bodyBackground;
+    margin-top: -@h3_line_height;
+    padding: 0 0.5em;
+    float: left;
+    position: relative;
+    display: inline;
+    clear: both;
+  }
+}
+
+.boxed.tabbed {
+  margin-top: 34px;   // height of the tab box
+  h3 {
+    clear: none;
+  }
+  ul.nav.nav-tabs {
+    margin-top: -49px;
+    float: right;
+  }
+  ul.nav.nav-pill {
+    margin-top: -49px;
+    float: right;
+  }
+}
