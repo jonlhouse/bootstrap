@@ -4255,6 +4255,19 @@ a.thumbnail:hover {
 span.btn-label {
   line-height: 26px;
 }
+.sortable > div {
+  position: relative;
+}
+.sortable > div > * {
+  margin-left: 20px;
+}
+.sortable > div > *:first-child {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 20px;
+  margin: auto 0;
+}
 .combobox ul.dropdown-menu li a {
   cursor: pointer;
 }
@@ -4268,6 +4281,42 @@ span.btn-label {
   width: 800px;
   margin-left: -400px;
 }
+table.table tbody tr.selected td,
+table.table tbody tr.selected th {
+  background: #dff1fc !important;
+}
+table.table tbody tr.selected:hover td,
+table.table tbody tr.selected:hover th {
+  background: #ecefef !important;
+}
+table.selectable > tbody {
+  cursor: pointer;
+}
+.accordion-group .accordion-heading {
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(top, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+.accordion-group .accordion-heading:hover,
+.accordion-group .accordion-heading:active,
+.accordion-group .accordion-heading.active,
+.accordion-group .accordion-heading.disabled,
+.accordion-group .accordion-heading[disabled] {
+  background-color: #e6e6e6;
+}
+.accordion-group .accordion-heading:active,
+.accordion-group .accordion-heading.active {
+  background-color: #cccccc \9;
+}
 .lr.lr-neg {
   color: #7f3737;
 }
@@ -4276,4 +4325,32 @@ span.btn-label {
 }
 .lr.lr-unity {
   color: #7f5b37;
+}
+.boxed {
+  border: 1px solid #999999;
+  padding: 13.5px 20px;
+  margin: 13.5px 0 20px 0;
+}
+.boxed h3 {
+  background-color: #ffffff;
+  margin-top: -27px;
+  padding: 0 0.5em;
+  float: left;
+  position: relative;
+  display: inline;
+  clear: both;
+}
+.boxed.tabbed {
+  margin-top: 34px;
+}
+.boxed.tabbed h3 {
+  clear: none;
+}
+.boxed.tabbed ul.nav.nav-tabs {
+  margin-top: -49px;
+  float: right;
+}
+.boxed.tabbed ul.nav.nav-pill {
+  margin-top: -49px;
+  float: right;
 }

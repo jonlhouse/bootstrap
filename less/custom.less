@@ -5,6 +5,27 @@ span.btn-label {
   line-height: @baseButtonHeight;
 }
 
+// General Purpose Styles
+// --------------------
+// Used for making a sortable list of element
+//  The first child is the handle (+) and the rest is the sortable element.
+.sortable > div {
+  position: relative;
+
+  > * {
+    margin-left: 20px;
+
+    &:first-child {
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      width: 20px;
+      margin: auto 0;
+    }
+  }
+}
+
+
 // COMBOBOX
 // --------------------
 .combobox ul.dropdown-menu li a {
@@ -12,6 +33,7 @@ span.btn-label {
 }
 
 // MODAL EXTENSIONS
+// --------------------
 .modal.modal-tall {
   .modal-body {
     max-height: 600px;    // add 200px so
@@ -22,6 +44,29 @@ span.btn-label {
 .modal.modal-wide {     // original is 7 spans (560px wide) -- wide will be 10 spans (800px)
   width: 800px;
   margin-left: -400px;        // offset -280 - (new 240 / 2) =
+}
+
+// TABLES
+// --------------------
+table.table tbody {
+  tr.selected td, tr.selected th {
+    background: @blueLight !important;
+  }
+  tr.selected:hover td, tr.selected:hover th {
+    background: @blueGray !important;
+  }
+}
+
+table.selectable > tbody {
+  cursor: pointer;
+}
+
+// Accordions
+// -------------------------------
+.accordion-group {
+  .accordion-heading {
+    .buttonBackground(@btnBackground, @btnBackgroundHighlight);
+  }
 }
 
 // LR SPECIFIC COLORS
