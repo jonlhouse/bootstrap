@@ -26,7 +26,7 @@
 @green:                 #46a546;
 @red:                   #9d261d;
 @yellow:                #ffc40d;
-@orange:                #f89406;
+@orange:                #F25430; //#f89406;
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
@@ -160,15 +160,23 @@
 // Navbar
 // -------------------------
 @navbarHeight:                    40px;
-@navbarBackground:                @grayDarker;
-@navbarBackgroundHighlight:       @grayDark;
+//@navbarBackground:                @grayDarker;
+//@navbarBackgroundHighlight:       @grayDark;
+@navbarBackground:                @white;
+@navbarBackgroundHighlight:       @grayLighter;
 
-@navbarText:                      @grayLight;
-@navbarLinkColor:                 @grayLight;
-@navbarLinkColorHover:            @white;
+@navbarText:                      @linkColor;
+@navbarLinkColor:                 @navbarText;
+@navbarLinkColorHover:            @orange;
 @navbarLinkColorActive:           @navbarLinkColorHover;
 @navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      @navbarBackground;
+@navbarLinkBackgroundActive:      @linkColor;
+//@navbarText:                      @grayLight;
+//@navbarLinkColor:                 @grayLight;
+//@navbarLinkColorHover:            @white;
+//@navbarLinkColorActive:           @navbarLinkColorHover;
+//@navbarLinkBackgroundHover:       transparent;
+//@navbarLinkBackgroundActive:      @navbarBackground;
 
 @navbarSearchBackground:          lighten(@navbarBackground, 25%);
 @navbarSearchBackgroundFocus:     @white;

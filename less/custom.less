@@ -25,6 +25,27 @@ span.btn-label {
   }
 }
 
+// CENTERED LIST
+// --------------------
+.centered-list {
+  display: table;
+  margin: 0 auto;
+
+  ul {
+    margin: 0 auto;
+    li {
+      float: left;
+      padding: 0px 10px;
+    }
+    li:not(:first-child) {
+      border-left: 1px solid #777;
+    }
+    li:first-child {
+      padding-left: 0px;
+    }
+  }
+}
+
 
 // COMBOBOX
 // --------------------
@@ -81,4 +102,85 @@ table.selectable > tbody {
   &.lr-unity {
     color: @lrNeutralBase;
   }
+}
+
+// LOGIN SPECIFIC
+// -------------------------------
+body#login {
+  padding-top: 0px;   // override menu bar
+  background: #fff url('whitediamond.jpg') repeat-x;
+
+  #login-block-container {
+    width: 100%;
+
+    #login-block {
+      width: 500px;
+      margin: 100px auto 0 auto;
+      padding: 20px;
+
+      background-color: @white;
+      border: 1px solid #999;
+      //border: 1px solid rgba(0,0,0,.3);
+      *border: 1px solid #999; /* IE6-7 */
+      .border-radius(2px);
+      .box-shadow(0 5px 50px rgba(0,0,0,0.3));
+    }
+  }
+}
+
+#login-block {
+  h1 {
+    margin-bottom: 20px;
+  }
+  .username-password {
+    width: 400px;  // 120px (label) + 20px (gutter) + 240px (input - 3 col) + 20px (gutter)
+    float: left;
+  }
+  .login-btn {
+    margin-top: 10px;
+
+    .btn {
+      font-size: 24px;
+      padding: 12px 18px;
+    }
+  }
+}
+
+form#new_smd_user {
+  #register-btn {
+    float: right;
+    margin-right: 40px;
+  }
+}
+
+form#forgot-pasword {
+  #email-wrapper {
+    width: 400px;
+    float: left;
+  }
+  .btn {
+
+  }
+}
+
+// NAVBAR
+// ---------------------------
+.navbar .nav .dropdown-toggle .caret,   // change the drop-down caret color
+.navbar .nav .open.dropdown .caret {
+  border-top-color: @grayDark;
+  border-bottom-color: @grayDark;
+}
+
+.navbar .nav > li > a {
+  text-shadow: 0 -1px 0 @navbarBackground;
+}
+
+.navbar-inner {                         // replace default with blue-ish
+  // lighten version of linkColor (0, 136, 204)
+  @shadow: 0 1px 3px rgba(100,100,100,.15), inset 0 -1px 0 rgba(100, 100, 100,.05);
+  .box-shadow(@shadow);
+}
+
+.navbar .nav > li.dropdown.open > a{
+  color: @navbarLinkColorHover;
 }
