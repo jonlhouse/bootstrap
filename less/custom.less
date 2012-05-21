@@ -5,6 +5,76 @@ span.btn-label {
   line-height: @baseButtonHeight;
 }
 
+// ALERTS
+// --------------------
+.alert-neutral {
+  background-color: @neutralBackground;
+  border-color: @neutralBorder;
+}
+.alert-neutral,
+.alert-neutral .alert-heading {
+  color: @neutralText;
+}
+
+// BUTTON GROUPS
+// --------------------
+.btn-toolbar {
+  .btn-label {
+    float: left;
+    line-height: @baseLineHeight;
+    margin-right: 5px;
+  }
+}
+.btn-toolbar.btn-toolbar-stacked {
+  .btn-group {
+    display: block;
+  }
+  .btn-group + .btn-group {
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+}
+.btn-toolbar.btn-toolbar-stacked.btn-toolbar-fill {
+  a.btn {
+    width: 100%;
+  }
+}
+
+// DROPDOWNS
+// --------------------
+.input-prepend.dropdown .caret:hover,
+.input-append.dropdown .caret:hover {
+  .opacity(100);
+}
+.input-prepend.combobox, .input-append.combobox {
+  .caret {
+    border-left:  8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top:   8px solid @black;
+    margin: 6px 0;
+  }
+  ul.dropdown-menu {
+    margin-top: -8px;
+  }
+}
+
+// TYPE
+// --------------------
+.baseline-bottom {
+  margin-bottom: @baseLineHeight;
+}
+ul.sortable {
+  margin-left: 0;
+  list-style: none;
+}
+
+// WELLS
+// --------------------
+.well.tight.nav-list {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
 // General Purpose Styles
 // --------------------
 // Used for making a sortable list of element
@@ -24,6 +94,12 @@ span.btn-label {
     }
   }
 }
+
+// remove margins
+.tight {
+  margin: 0px;
+}
+
 
 // CENTERED LIST
 // --------------------
